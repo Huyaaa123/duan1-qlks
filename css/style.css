@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Cookie&family=Poppins:wght@600&display=swap');
+
+:root {
+  --bg-text-shadow: 0 2px 4px rgb(13 0 77 / 8%), 0 3px 6px rgb(13 0 77 / 8%),
+    0 8px 16px rgb(13 0 77 / 8%);
+  --bg-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.621);
+}
+*::-webkit-scrollbar {
+  width: 0.4rem;
+}
+*::-webkit-scrollbar-track {
+  background: rgb(6, 6, 44);
+}
+*::-webkit-scrollbar-thumb {
+  background: #0040ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  /* text-shadow: var(--bg-text-shadow); */
+}
+
+nav {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.279);
+  z-index: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+  /* box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.386); */
+}
+
+nav ul {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  color: black;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin-right: 20px;
+}
+ul li {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+ul a button {
+  margin-left: 10px;
+}
+ul li:hover::after {
+  content: '';
+  position: absolute;
+  display: flex;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  /* display: none; */
+  transition: ease 2s;
+}
+
+ul li a:hover {
+  color: black;
+}
+
+.logo {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+.logo-nav {
+  display: flex;
+  flex-direction: row;
+}
+.logo .bluebirdlogo {
+  height: 100%;
+}
+
+.logo p {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(66, 68, 74);
+  text-shadow: var(--bg-text-shadow);
+}
+
+#firstsection {
+  height: 100vh;
+  background-color: rgba(175, 175, 222, 0.511);
+  width: 100%;
+  /* z-index: 2000; */
+}
+
+#firstsection .carousel-inner {
+  width: 100%;
+  height: 100vh;
+  /* padding: 0 50px; */
+}
+#firstsection .carousel-inner::after {
+  content: '';
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(178, 170, 236, 0.533);
+}
+
+#firstsection .carousel-item {
+  overflow: hidden;
+}
+
+#firstsection .carousel-item img {
+  width: 100%;
+  height: 100vh;
+}
+
+#firstsection .welcomeline {
+  position: absolute;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+#firstsection .welcometag {
+  font-size: 110px;
+  font-weight: bold;
+  font-family: 'Cookie', cursive;
+  letter-spacing: 2px;
+  line-height: 100px;
+  padding: 5px;
+  /* text gradiant */
+  background: -webkit-linear-gradient(
+    317deg,
+    rgba(0, 60, 255, 0.81) 0%,
+    rgb(255 0 123) 70%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* secondsection */
+
+#secondsection {
+  height: 100vh;
+}
+
+#secondsection img {
+  /* background-size: cover; */
+  height: 100vh;
+  width: 100%;
+  filter: blur(20px);
+  position: absolute;
+  /* -webkit-backdrop-filter: blur(30px);  */
+  z-index: -2;
+}
+
+.ourroom {
+  position: relative;
+  top: 90px;
+  height: 400px;
+  width: 100%;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-around;
+  /* background-color: #0040ff; */
+}
+
+.head {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.roomselect {
+  display: flex;  
+  height: 100%;
+ 
+  justify-content: space-evenly;
+}
+
+.roomselect .roombox {
+  height: 100%;
+  width: 300px;
+  background-color: rgb(8, 8, 48);
+  border-radius: 10px;
+  overflow: hidden;
+  /* margin: 0 20px; */
+}
+
+.hotelphoto {
+  height: 250px;
+  width: 100%;
+  background-color: aquamarine;
+  background-size: cover;
+}
+
+/* .h1 {
+  background-image: url(../image/hotel1photo.webp);
+}
+.h2 {
+  background-image: url(../image/hotel2photo.jpg);
+}
+.h3 {
+  background-image: url(../image/hotel3photo.avif);
+}
+.h4 {
+  background-image: url(../image/hotel4photo.jpg);
+} */
+
+.roomdata {
+  text-align: center;
+}
+
+.roomdata h2 {
+  color: rgb(207, 211, 255);
+  font-size: 30px;
+}
+
+.sevices {
+  display: flex;
+}
+
+.services i {
+  color: white;
+  margin: 7px;
+}
+
+.bookbtn {
+  margin: 10px;
+}
+
+/* roombookcss */
+
+#guestdetailpanel {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.558);
+  position: fixed;
+  z-index: 10000;
+}
+
+.logoutbtn {
+  height: 20px;
+  width: 200px;
+  background-color: rgba(216, 19, 19, 0.804);
+}
+
+#thirdsection {
+  height: 80vh;
+  width: 100%;
+  margin-top: -230px;
+  /* background-color: black; */
+}
+
+.facility {
+  height: 70%;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.facility .box {
+  height: 100%;
+  width: 310px;
+  border: 2px solid white;
+  background-color: #0040ff;
+}
+
+.facility .box h2 {
+  text-align: center;
+  position: relative;
+  top: 80%;
+  color: white;
+  background-color: #0000005e;
+}
+
+.box:nth-child(1) {
+  background-image: url(../image/swimingpool.jpg);
+  background-size: cover;
+}
+.box:nth-child(2) {
+  background-image: url(../image/spa.jpg);
+  background-size: cover;
+}
+.box:nth-child(3) {
+  background-image: url(../image/food.jpg);
+  background-size: cover;
+}
+.box:nth-child(4) {
+  background-image: url(../image/gym.jpg);
+  background-size: cover;
+}
+.box:nth-child(5) {
+  background-image: url(../image/heli.jpg);
+  background-size: cover;
+}
+
+#contactus {
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+#contactus .social {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#contactus i {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#contactus .createdby {
+  color: white;
+}
+
+/* responsive stuff */
+
+@media (max-width: 30rem) {
+  nav {
+    justify-content: center;
+    position: relative;
+    background-color: #96a8f88c;
+  }
+  nav ul {
+    display: none;
+  }
+  #firstsection {
+    height: 50vh;
+    text-align: center;
+  }
+  #firstsection .carousel-inner {
+    height: 50vh;
+  }
+  #firstsection .carousel-inner::after {
+    height: 50vh;
+  }
+  #firstsection .carousel-item img {
+    height: 50vh;
+  }
+  #firstsection .welcomeline {
+    height: 50vh;
+  }
+  #firstsection .welcometag {
+    text-align: center;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  #secondsection {
+    height: auto;
+  }
+  #secondsection {
+    height: 240vh;
+  }
+  #secondsection img {
+    display: none;
+  }
+  .ourroom {
+    height: auto;
+  }
+  .roomselect {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .roomselect .roombox {
+    width: 75%;
+  }
+
+  #thirdsection {
+    height: 100vh;
+  }
+  .facility {
+    height: 70%;
+    flex-wrap: wrap;
+  }
+  .facility .box {
+    margin: 0;
+    padding: 0;
+    height: 55%;
+    width: 50%;
+  }
+
+  .facility .box h2 {
+    font-size: 18px;
+    flex-wrap: wrap;
+  }
+
+  .box:nth-child(5) {
+    display: none;
+  }
+
+  #contactus {
+    padding: 0 30px;
+  }
+}
+
+/* ROOM DETAIL */
+
+.list-phong-room {
+  /* border: 1px solid black; */
+  padding: 40px;
+  background-color: #d3d3d3;
+}
+.col-rooms_img-room img {
+  width: 100%;
+}
+.col-rooms_img-room {
+  width: 30%;
+}
+/* .col .col-rooms {
+  display: flex;
+} */
+.detail-text3-room {
+  margin-left: 50px;
+  padding: 10px;
+}
+button .book-room {
+  margin-top: 20px;
+}
+.book-room {
+  background-color: #0040ff;
+  border: #0040ff;
+  color: white;
+  margin-top: 20px;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+}
+.icon-room {
+  /* color: white; */
+  padding: 20px 0;
+}
+i {
+  margin-right: 20px;
+}
+.dachieu {
+  width: 150px;
+  margin-left: 20px;
+}
+.dachieu1 img {
+  height: 82px;
+  width: 150px;
+  padding: 0 20px 10px 10px;
+}
+.text-chitiet {
+  width: 680px;
+}
+.price-room {
+  margin-bottom: 10px;
+  color: red;
+  font-size: 20px;
+}
+
+/* CHECKOUT ROOMS */
+.checkout-room h1 {
+  text-align: center;
+  padding: 20px 10px;
+}
+.checkout-room {
+  background-color: #ffffff;
+  height: 800px;
+}
+table {
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 20px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: rgb(139, 98, 138);
+  color: white;
+}
+
+/* facilitiesDetail. */
+.title_faci {
+  text-align: center;
+  margin: 20px 0;
+}
+.facilities {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 50px 0;
+}
+.col-content {
+  text-align: center;
+}
+.col-sm-7 img {
+  width: 90%;
+}
+.facilities .col-sm-5 {
+  margin-top: 40px;
+  line-height: 30px;
+}
+.col-sm-5 p {
+  width: 80%;
+  margin: 20px 90px;
+}
+.view_room {
+  color: white;
+  text-decoration: none;
+}
+/* .col{
+  width: 80%;
+  margin-left: 20px;
+} */
+
+/* search phong */
+.title_searchphong{
+  /* transform: translate(-50%, -50%); */
+  background: #ffffff41;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  border: 1px solid rgb(218, 206, 206);
+  width: 50%;
+  height: 150px;
+  position: relative;
+  bottom: 165px;
+  right:10px;
+  border-radius: 5px;
+}
+.title_searchphong h2{
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.title_searchphong .row{
+  margin-left: 40px;
+}
+.timkiem{
+  margin-top: 25px;
+  
+} 
+.request_search{
+  margin-top: 50px;
+}
+
+
+/* booking */
+
+.main_booking{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  position: relative;
+}
+.col-trai{
+  width: 40%;
+  border: 1px solid rgb(169, 165, 165);
+  margin-left: 50px;
+  box-shadow: 0px 0px 10px 2px rgba(141, 131, 131, 0.621);
+
+}
+.col-trai .image_booking{
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.name-booking{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.col-phai{
+  box-shadow: 0px 0px 10px 2px rgba(141, 131, 131, 0.621);
+  width: 50%;
+  height: 500px;
+  margin-left: 50px;
+  background-color: rgb(222, 215, 215);
+}
+.form-booking{
+  width: 90%;
+  margin-left: 40px;
+}
+.date-booking{
+  display: flex;
+  justify-content: space-between;
+
+}
+.check{
+  width: 50px;
+}
+.booking{
+  position: absolute;
+  right: -10px;
+  bottom: -100px;
+}
+.sotien{
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+}
+
+
+/*  */
+
+#paypal-form {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#paypal-form h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#paypal-form p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+#paypal-button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Tạo nút thanh toán giống với PayPal SDK */
+#paypal-button {
+  color: #ffffff;
+  background-color: #003087;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#paypal-button:hover {
+  background-color: #001e55;
+}
+
+#paypal-button:active {
+  background-color: #001e55;
+  transform: scale(0.95);
+}
+
+.order-details {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-info {
+  margin-bottom: 20px;
+}
+
+.customer-details input[type="text"] {
+  width: 35%;
+  padding: 10px;
+  margin: 5px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#paypal-form {
+  display: none;
+}
+
+.product-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-actions {
+  text-align: right;
+}
+.title-clickpt{
+  margin-top: 20px;
+  font-size: 25px;
+}
+.confirm-order {
+  margin-top: 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.confirm-order a {
+  text-decoration: none;
+  color: white;
+}
+
+.confirm-order:hover {
+  background-color: red;
+}
+.ten_status{
+  color: green;
+}

@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Cookie&family=Poppins:wght@600&display=swap');
+
+:root {
+  --bg-text-shadow: 0 2px 4px rgb(13 0 77 / 8%), 0 3px 6px rgb(13 0 77 / 8%),
+    0 8px 16px rgb(13 0 77 / 8%);
+  --bg-box-shadow: 0px 0px 20px 6px rgb(0 0 0 / 34%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  /* text-shadow: var(--bg-text-shadow); */
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+.nav-trai .uppernav {
+  height: 50px;
+  /* background-color: rgb(78, 94, 112); */
+  background-image: linear-gradient(90deg, #70b7e6bc, #0000ffaa);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+}
+.logo {
+  height: 90%;
+  display: flex;
+}
+.logo .bluebirdlogo {
+  height: 100%;
+}
+.logo p {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(8, 17, 44);
+  text-shadow: var(--bg-text-shadow);
+}
+
+.logout button {
+  height: 30px;
+  width: 100px;
+  background-color: rgba(228, 24, 24, 0.789);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-trai .sidenav {
+  position: absolute;
+  background-color: #0e1b3d;
+  width: 18%;
+  height: 100%;
+  color: #ffffff;
+}
+ul li {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0px 10px;
+  height: 50px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+/* đoạn này cho xuống hover text-home, kéo xuống dòng 128 để sửa */
+/* ul li:hover {
+  background-color: #141dd498;
+} 
+
+ul li.active {
+  background-color: #141dd498;
+}*/
+
+.mainscreen {
+  margin-left: 18%;
+}
+
+.frames {
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+
+.frames.active {
+  display: block;
+}
+
+/* temp */
+img {
+  height: 23px;
+}
+
+/* responsive stuff */
+#mobileview {
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 40rem) {
+  #mobileview {
+    display: flex;
+  }
+}
+
+/* Home Admin */
+.text-home {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.text-home img {
+  width: 50px;
+  height: 50px;
+  margin-top: 8px;
+}
+.chaomung {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.sidenav ul li:hover {
+  background-color: violet;
+}
+.sidenav ul li.active {
+  background-color: #141dd498;
+}
+.sidenav ul li a {
+  text-decoration: none;
+  color: white;
+}
+/* .flex-home {
+  display: flex;
+} */
+
+/* Sơ đồ khách sạn */
+
+.container {
+  display: flex;
+  /* margin-left: 500px; */
+}
+.table-container {
+  /* max-width: 100%; */
+  margin-left: 400px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #0e1b3d;
+  color: white;
+}
+.th-td {
+  background-color: green;
+}
+th,
+td {
+  padding: 40px;
+  text-align: center;
+  /* border-bottom: 2px solid #ddd; */
+  border: 1px solid white;
+}
+
+td:hover {
+  background-color: #f5f5f5;
+  color: red;
+}
+
+tr:first-child td:first-child {
+  padding-right: 20px;
+}
+
+td {
+  padding-left: 45px;
+}
+
+/**/
+
+.sidenav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidenav ul li {
+  cursor: pointer;
+}
+
+.sub-menu {
+  display: none;
+}
+/* đoạn này giúp ẩn các thẻ ul li trong admin khi nhấn các danh mục mẹ */
+.subMenu {
+  display: none;
+  padding-left: 20px;
+  background-color: #6e89cf;
+  /* color: black; */
+}
+.subMenu li a {
+  margin-left: 20px;
+}
+.subMenu.show {
+  display: block;
+}
+
+/* quanlydanhmucphong */
+
+.home-admin {
+  display: flex;
+  flex-direction: row;
+  height: 85%;
+}
+.sidenav {
+  width: 20%;
+  border: 1px solid rgb(230, 221, 221);
+}
+
+#contactus {
+  height: 70px;
+  position: absolute;
+  left: 0;
+  /* overflow: scroll; */
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+#contactus .social {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-right {
+  width: 70%;
+  margin: 40px;
+  border: 1px solid rgb(206, 202, 202);
+  border-radius: 5px;
+}
+#contactus i {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#contactus .createdby {
+  color: white;
+}
+.aside-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding-top: 10px;
+  background-color: rgba(128, 128, 128, 0.489);
+}
+.aside-content p {
+  color: red;
+  margin-left: 10px;
+}
+.aside-content p span {
+  color: blue;
+}
+.aside-content div button {
+  color: white;
+  background-color: blue;
+  border: 1px solid blue;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 80px;
+  height: 30px;
+  font-size: 10px;
+}
+.aside-content div button i {
+  background-color: rgb(161, 161, 243);
+  font-size: 12px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.display-floor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.table-loaiphong {
+  text-align: center;
+}
+.display-floor {
+  margin-top: 10px;
+  color: rgb(32, 31, 31);
+  font-size: 12px;
+}
+.display-floor .display-floor_left {
+  margin-left: 10px;
+}
+.display-floor_right div button {
+  font-size: 12px;
+}
+.display-floor_right div input {
+  font-size: 12px;
+}
+.table-loaiphong {
+  border: 1px solid rgb(209, 198, 198);
+  width: 95%;
+  margin-left: 25px;
+}
+tbody td button {
+  border: 1px solid white;
+}
+tbody td button .fa-xmark {
+  color: red;
+  margin-left: 10px;
+}
+tbody td button .fa-pen-to-square {
+  color: rgb(47, 47, 178);
+}
+.quanly-user{
+  width: 100%;
+}
